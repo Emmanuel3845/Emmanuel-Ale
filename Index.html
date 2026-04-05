@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
 <title>Ale Emmanuel  Data Analyst</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
 <style>
@@ -201,7 +202,7 @@
       </div>
       <div class="hero-card-info">
         <div class="hero-card-name">Ale Emmanuel</div>
-        <div class="hero-card-role">Data Analyst · Business Intelligence</div>
+        <div class="hero-card-role">Data Analyst · Business Analst · Business Intelligence</div>
         <div class="hero-stats">
           <div class="hero-stat"><div class="hero-stat-n">SQL</div><div class="hero-stat-l">Primary</div></div>
           <div class="hero-stat"><div class="hero-stat-n">BI</div><div class="hero-stat-l">Dashboards</div></div>
@@ -393,7 +394,7 @@
   <div class="reveal">
     <div class="section-label">Let's Work Together</div>
     <div class="contact-big">Ready to turn your data into <em>growth?</em></div>
-    <p class="contact-sub">Whether you need a dashboard built, a retention problem solved, or a strategic analytics partner — let's talk.</p>
+    <p class="contact-sub">Whether you need a dashboard built, a retention problem solved, or a strategic analytics partner. let's talk.</p>
   </div>
   <div class="contact-links reveal">
     <a class="contact-link" href="mailto:emmanueltosin3845@gmail.com"><span>emmanueltosin3845@gmail.com</span><span class="contact-link-arrow">→</span></a>
@@ -407,15 +408,33 @@
   <span class="contact-link-arrow">→</span>
 </a>
     <!-- <a class="contact-link" href="#"><span>Download Resume / CV</span><span class="contact-link-arrow">→</span></a> -->
-    <a class="contact-link" href="#"><span>Schedule a Call</span><span class="contact-link-arrow">→</span></a>
+    <!-- <a class="contact-link" href="#"><span>Schedule a Call</span><span class="contact-link-arrow">→</span></a> -->
+     <a href="#" class="contact-link" onclick="openContactOptions(event)">
+  <span>Schedule a Call</span>
+  <span class="contact-link-arrow">→</span>
+</a>
+
+<script>
+function openContactOptions(e) {
+  e.preventDefault();
+
+  const choice = confirm("Click OK for WhatsApp or Cancel for Phone Call");
+
+  if (choice) {
+    // WhatsApp
+    window.open("https://wa.me/2347010006810", "_blank");
+  } else {
+    // Phone call
+    window.location.href = "tel:+2347010006810";
+  }
+}
+</script>
   </div>
 </section>
-
 <footer>
   <div class="footer-name">Ale Emmanuel · Data Analyst</div>
   <div class="footer-copy">© 2024 · Crafted with precision</div>
 </footer>
-
 <script>
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
